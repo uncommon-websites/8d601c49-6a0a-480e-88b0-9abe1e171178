@@ -10,7 +10,7 @@
   import Footer from "$lib/Footer.svelte";
 </script>
 
-<div class="min-h-screen bg-gray-50 font-sans selection:bg-black selection:text-white">
+<div class="min-h-screen bg-white font-sans selection:bg-black selection:text-white">
   <Header />
   
   <main>

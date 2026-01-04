@@ -34,28 +34,21 @@
   }
 </script>
 
-<section class="px-6 py-24 md:py-32 bg-white">
-  <div class="max-w-7xl mx-auto">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
-      <div class="lg:col-span-4">
-        <span class="text-[10px] tracking-[0.2em] text-gray-500 uppercase font-medium mb-6 block">
-          Support
-        </span>
-        <h2 class="text-4xl md:text-5xl font-light text-gray-900 mb-8 leading-[1.1]">
-          Frequently asked questions
-        </h2>
-        <p class="text-gray-600 text-base leading-relaxed mb-8">
-          Have more questions? Our support team is available 24/7 to help you understand our platform and investment strategies.
-        </p>
-        <a href="/" class="inline-flex items-center gap-2 text-sm text-gray-900 font-medium hover:gap-3 transition-all group">
-          Contact support
-          <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-          </svg>
-        </a>
-      </div>
+<section class="px-8 py-32 md:py-40 bg-white">
+  <div class="max-w-[1400px] mx-auto">
+    <div class="text-center mb-24 max-w-4xl mx-auto">
+      <span class="text-[9px] tracking-[0.3em] text-gray-400 uppercase font-medium mb-10 block">
+        Support
+      </span>
+      <h2 class="text-5xl md:text-6xl font-extralight text-gray-900 mb-10 leading-[1.05] tracking-tight">
+        Frequently asked questions
+      </h2>
+      <p class="text-gray-500 text-lg md:text-xl leading-relaxed font-light">
+        Have more questions? Our support team is available 24/7 to help you understand our platform and investment strategies.
+      </p>
+    </div>
       
-      <div class="lg:col-span-8">
+    <div class="max-w-4xl mx-auto">
         <div class="space-y-4">
           {#each faqs as faq, i}
             <div class="border border-gray-200 rounded-lg overflow-hidden hover:border-gray-300 transition-colors">

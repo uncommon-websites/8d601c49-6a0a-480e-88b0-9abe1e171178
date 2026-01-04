@@ -1,11 +1,11 @@
 <script>
-  // Header component
+  // Header component - Ultra-minimal design
 </script>
 
-<header class="flex items-center justify-between px-6 py-4 sticky top-0 bg-gray-50 z-50">
-  <div class="flex items-center gap-2">
-    <div class="font-bold text-lg tracking-tight flex items-center gap-3">
-      <svg width="24" height="26" viewBox="0 0 97 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+<header class="flex items-center justify-between px-8 py-6 sticky top-0 bg-white/80 backdrop-blur-xl z-50 border-b border-gray-100">
+  <div class="flex items-center gap-3">
+    <div class="font-light text-xl tracking-tight flex items-center gap-3">
+      <svg width="20" height="22" viewBox="0 0 97 105" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path opacity="0.5" d="M0.84375 29.5892V75.3785L43.791 45.7896V0L0.84375 29.5892Z" fill="currentColor"/>
         <path opacity="0.5" d="M0.84375 75.3787V29.5891L43.791 59.1783V104.968L0.84375 75.3787Z" fill="currentColor"/>
         <path opacity="0.5" d="M96.8438 29.5891V75.3787L53.8965 45.7895V0L96.8438 29.5891Z" fill="currentColor"/>
@@ -13,16 +13,16 @@
       </svg>
       ECHO
     </div>
-    <span class="text-gray-500 text-sm ml-2">Early-stage investing</span>
   </div>
 
-  <nav class="hidden md:flex items-center gap-8 text-sm text-gray-600">
-    <a href="/" class="hover:text-black flex items-center gap-1">For investors <span class="text-xs">+</span></a>
-    <a href="/" class="hover:text-black">For founders</a>
+  <nav class="hidden md:flex items-center gap-10 text-sm text-gray-500 font-light">
+    <a href="/" class="hover:text-gray-900 transition-colors duration-300">Investors</a>
+    <a href="/" class="hover:text-gray-900 transition-colors duration-300">Institutions</a>
+    <a href="/" class="hover:text-gray-900 transition-colors duration-300">About</a>
   </nav>
 
-  <div class="flex items-center gap-6 text-sm">
-    <a href="/" class="text-gray-600 hover:text-black">Log in</a>
-    <a href="/" class="bg-black text-white px-5 py-2.5 hover:bg-gray-800 transition-colors">Sign up</a>
+  <div class="flex items-center gap-8 text-sm">
+    <a href="/" class="text-gray-500 hover:text-gray-900 transition-colors duration-300 font-light">Log in</a>
+    <a href="/" class="bg-black text-white px-6 py-3 hover:bg-gray-900 transition-all duration-300 font-medium tracking-wide">Sign up</a>
   </div>
 </header>
