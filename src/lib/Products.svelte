@@ -131,11 +131,3 @@
     </div>
   </div>
 </section>
- on your risk tolerance, investment timeline, and financial objectives.
-      </p>
-      <a href="/" class="inline-block bg-white text-gray-900 px-8 py-4 text-sm font-medium hover:bg-gray-100 transition-colors">
-        Get personalized recommendations
-      </a>
-    </div>
-  </div>
-</section>

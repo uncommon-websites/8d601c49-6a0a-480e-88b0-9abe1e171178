@@ -49,34 +49,33 @@
     </div>
       
     <div class="max-w-4xl mx-auto">
-        <div class="space-y-4">
-          {#each faqs as faq, i}
-            <div class="border border-gray-200 rounded-lg overflow-hidden hover:border-gray-300 transition-colors">
-              <button 
-                class="w-full px-8 py-6 flex items-center justify-between text-left bg-white hover:bg-gray-50 transition-colors group"
-                onclick={() => toggle(i)}
-              >
-                <span class="text-base font-medium text-gray-900 pr-8">{faq.question}</span>
-                <div class={[
-                  'flex-shrink-0 w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center transition-all',
-                  openIndex === i ? 'bg-gray-900 border-gray-900 rotate-180' : 'group-hover:border-gray-400'
-                ]}>
-                  <svg class={[
-                    'w-4 h-4 transition-colors',
-                    openIndex === i ? 'text-white' : 'text-gray-600'
-                  ]} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-                  </svg>
-                </div>
-              </button>
-              {#if openIndex === i}
-                <div class="px-8 pb-6 text-gray-600 leading-relaxed animate-in fade-in slide-in-from-top-2 duration-200">
-                  {faq.answer}
-                </div>
-              {/if}
-            </div>
-          {/each}
-        </div>
+      <div class="space-y-px bg-gray-100">
+        {#each faqs as faq, i}
+          <div class="bg-white overflow-hidden hover:bg-gray-50 transition-all duration-300">
+            <button 
+              class="w-full px-10 py-8 flex items-center justify-between text-left group"
+              onclick={() => toggle(i)}
+            >
+              <span class="text-lg font-light text-gray-900 pr-8 tracking-tight">{faq.question}</span>
+              <div class={[
+                'flex-shrink-0 w-10 h-10 border border-gray-200 flex items-center justify-center transition-all duration-300',
+                openIndex === i ? 'bg-gray-900 border-gray-900 rotate-180' : 'group-hover:border-gray-400'
+              ]}>
+                <svg class={[
+                  'w-4 h-4 transition-colors',
+                  openIndex === i ? 'text-white' : 'text-gray-400'
+                ]} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 9l-7 7-7-7"/>
+                </svg>
+              </div>
+            </button>
+            {#if openIndex === i}
+              <div class="px-10 pb-8 text-gray-500 leading-relaxed font-light animate-in fade-in slide-in-from-top-2 duration-200">
+                {faq.answer}
+              </div>
+            {/if}
+          </div>
+        {/each}
       </div>
     </div>
   </div>
