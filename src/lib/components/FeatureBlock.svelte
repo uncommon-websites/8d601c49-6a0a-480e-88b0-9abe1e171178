@@ -1,8 +1,12 @@
 <script lang="ts">
-	export let title: string;
-	export let description: string;
-	export let buttons: { text: string; icon?: boolean; primary?: boolean }[] = [];
-	export let alignRight = false;
+	type Props = {
+		title: string;
+		description: string;
+		buttons?: { text: string; icon?: boolean; primary?: boolean }[];
+		alignRight?: boolean;
+	};
+	
+	let { title, description, buttons = [], alignRight = false }: Props = $props();
 </script>
 
 <section class="py-16 border-b border-border">

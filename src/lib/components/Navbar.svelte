@@ -1,14 +1,14 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	
-	let showBanner = true;
+	let showBanner = $state(true);
 </script>
 
 {#if showBanner}
 	<div class="bg-primary-50 border-b border-border py-2 px-4 text-xs font-mono flex justify-center items-center relative">
 		<div class="flex items-center gap-2">
-			<span class="text-muted">We raised $100M to build the web's second user.</span>
-			<a href="#" class="underline decoration-muted hover:text-accent transition-colors">Read more.</a>
+			<span class="text-muted text-center">New Experiment: Validating autonomous capital deployment for AI agents.</span>
+			<a href="#" class="underline decoration-muted hover:text-accent transition-colors">Read the report.</a>
 		</div>
 		<button 
 			class="absolute right-4 text-muted hover:text-foreground"
@@ -26,28 +26,27 @@
 	<div class="container-custom h-16 flex items-center justify-between">
 		<!-- Logo -->
 		<a href="/" class="text-xl font-bold tracking-tight flex items-center gap-2">
-			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-foreground">
-				<path d="M4 4H20V20H4V4Z" stroke="currentColor" stroke-width="2"/>
-				<path d="M8 4V20" stroke="currentColor" stroke-width="2"/>
-				<path d="M16 4V20" stroke="currentColor" stroke-width="2"/>
-				<path d="M4 12H20" stroke="currentColor" stroke-width="2"/>
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-accent">
+				<path d="M12 2L3 7V17L12 22L21 17V7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+				<path d="M12 22V12" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+				<path d="M12 12L21 7" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+				<path d="M12 12L3 7" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
 			</svg>
-			<span class="font-sans font-semibold">parallel</span>
+			<span class="font-sans font-semibold tracking-tighter">AGENTICAL LABS</span>
 		</a>
 
 		<!-- Links -->
-		<div class="hidden md:flex items-center gap-8 font-mono text-xs text-muted">
-			<a href="#" class="hover:text-foreground transition-colors">About</a>
-			<a href="#" class="hover:text-foreground transition-colors">Search</a>
-			<a href="#" class="hover:text-foreground transition-colors">Pricing</a>
-			<a href="#" class="hover:text-foreground transition-colors">Blog</a>
-			<a href="#" class="hover:text-foreground transition-colors">Docs</a>
+		<div class="hidden md:flex items-center gap-8 font-mono text-xs text-muted uppercase tracking-widest">
+			<a href="#" class="hover:text-foreground transition-colors">Experiments</a>
+			<a href="#" class="hover:text-foreground transition-colors">Infrastructure</a>
+			<a href="#" class="hover:text-foreground transition-colors">Research</a>
+			<a href="#" class="hover:text-foreground transition-colors">Discord</a>
 		</div>
 
 		<!-- CTA -->
 		<div class="flex items-center gap-4">
 			<a href="#" class="hidden md:flex items-center gap-2 border border-border px-3 py-1.5 text-xs font-mono hover:bg-primary-50 transition-colors uppercase">
-				Start Building
+				Join the Lab
 				<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5"/>
 				</svg>

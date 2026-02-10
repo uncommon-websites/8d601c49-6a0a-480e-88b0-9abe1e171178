@@ -2,150 +2,95 @@
 	import FeatureBlock from './FeatureBlock.svelte';
 </script>
 
-<!-- Block 1: Search, built for AIs -->
+<!-- Block 1: Public Experiments -->
 <FeatureBlock 
-	title="Search, built for AIs" 
-	description="The most accurate search tool, to bring web context to your AI agents."
+	title="Public Experiments, not private claims" 
+	description="We test infrastructure out in the open so the community can learn from real-world performance data."
 	buttons={[
-		{ text: "GIVE AI SEARCH A TRY", icon: true },
-		{ text: "LEARN MORE" }
+		{ text: "VIEW LIVE EXPERIMENTS", icon: true },
+		{ text: "METHODOLOGY" }
 	]}
 >
-	<div class="w-full h-full bg-white border border-border rounded shadow-sm p-4 font-mono text-xs">
-		<div class="flex items-center gap-2 border-b border-border pb-2 mb-4">
-			<span class="text-accent">></span>
-			<span class="text-muted">Agent</span>
-			<span class="w-2 h-4 bg-accent animate-pulse"></span>
-		</div>
-		<div class="space-y-2 opacity-50">
-			<div class="h-2 bg-gray-100 w-3/4 rounded"></div>
-			<div class="h-2 bg-gray-100 w-1/2 rounded"></div>
-			<div class="h-2 bg-gray-100 w-5/6 rounded"></div>
+	<div class="w-full h-full relative bg-white border border-border rounded shadow-sm overflow-hidden group">
+		<img 
+			src="/generated/image-close-up-of-a-high-end-computer-screen-s-1770719555111-1.webp" 
+			alt="Public Experiment Dashboard" 
+			class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+		/>
+		<div class="absolute top-4 left-4 font-mono text-[10px] bg-black/80 text-white px-2 py-1 backdrop-blur-sm">
+			LIVE_FEED: AGENT_NODE_04
 		</div>
 	</div>
 </FeatureBlock>
 
-<!-- Block 2: The most accurate deep and wide research -->
+<!-- Block 2: Validated Infrastructure -->
 <FeatureBlock 
-	title="The most accurate deep and wide research" 
-	description="Run deeper and more accurate research at scale, for the same compute budget"
+	title="Validated Infrastructure" 
+	description="Once a pattern is proven in our lab, we productize it into robust APIs and frameworks for the ecosystem."
 	buttons={[
-		{ text: "RUN A QUERY", icon: true }
+		{ text: "EXPLORE THE STACK", icon: true }
 	]}
 	alignRight={true}
 >
-	<div class="w-full max-w-md bg-white border border-border rounded shadow-sm p-6 flex flex-col gap-4">
-		<div class="flex items-center gap-2 text-xs font-mono text-muted">
-			<div class="w-4 h-4 border border-current rounded-sm flex items-center justify-center">
-				<div class="w-2 h-2 bg-current rounded-[1px]"></div>
-			</div>
-			Starting research...
-		</div>
-		<div class="w-full bg-gray-100 h-1.5 rounded-full overflow-hidden">
-			<div class="bg-accent h-full w-2/3"></div>
-		</div>
-		<div class="flex gap-1">
-			{#each Array(20) as _}
-				<div class="w-1 h-3 bg-gray-200"></div>
-			{/each}
-		</div>
-		<div class="mt-2 flex items-center gap-2 text-[10px] text-muted font-mono uppercase">
-			<span class="w-3 h-3 border border-current rounded-full flex items-center justify-center">i</span>
-			SEARCHING
+	<div class="w-full h-full relative bg-white border border-border rounded shadow-sm overflow-hidden group">
+		<img 
+			src="/generated/image-a-sleek-modern-server-rack-in-a-dimly-li-1770719562363-3.webp" 
+			alt="Validated Infrastructure" 
+			class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+		/>
+		<div class="absolute bottom-4 right-4 font-mono text-[10px] bg-accent text-white px-2 py-1">
+			INFRA_STATUS: OPTIMIZED
 		</div>
 	</div>
 </FeatureBlock>
 
-<!-- Block 3: Build a dataset from the web -->
+<!-- Block 3: Agentic Economy -->
 <FeatureBlock 
-	title="Build a dataset from the web" 
-	description="Define your search criteria in natural language, and get back a structured table of matches"
+	title="The Agentic Economy" 
+	description="We're building the economic primitives—funding, incentives, and settlement—that allow agents to operate autonomously."
 	buttons={[
-		{ text: "CREATE A DATASET", icon: true }
+		{ text: "READ ECONOMIC PAPERS", icon: true }
 	]}
 >
-	<div class="w-full h-full bg-white border border-border rounded shadow-sm overflow-hidden font-mono text-[10px]">
-		<div class="grid grid-cols-4 gap-2 p-2 border-b border-border bg-gray-50 text-muted">
-			<div>ID</div>
-			<div>ENTITIES</div>
-			<div>IS_AI</div>
-			<div>IS_SAAS</div>
+	<div class="w-full h-full relative bg-white border border-border rounded shadow-sm overflow-hidden group">
+		<img 
+			src="/generated/image-an-abstract-clean-visualization-of-inter-1770719559781-2.webp" 
+			alt="Economic Primitives Visualization" 
+			class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+		/>
+		<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-mono text-[10px] bg-white/90 text-black border border-border px-3 py-2 backdrop-blur-sm uppercase tracking-widest">
+			Economic Primitive v1.0
 		</div>
-		{#each [1, 2, 3, 4, 5, 6] as i}
-			<div class="grid grid-cols-4 gap-2 p-2 border-b border-border/50 items-center">
-				<div class="text-muted">{i}</div>
-				<div class="flex items-center gap-2">
-					<div class="w-3 h-3 rounded-full bg-blue-400/20"></div>
-					<span class="text-blue-600">Company {i}</span>
-				</div>
-				<div class="h-1.5 w-8 bg-gray-100 rounded"></div>
-				<div class="h-1.5 w-8 bg-gray-100 rounded"></div>
-			</div>
-		{/each}
 	</div>
 </FeatureBlock>
 
-<!-- Block 4: Custom web enrichment -->
+<!-- Block 4: Open Research -->
 <FeatureBlock 
-	title="Custom web enrichment" 
-	description="Bring existing data, define output columns to research, and get fresh web enrichments back"
+	title="Open Research & Benchmarks" 
+	description="No more fragmented tools or unclear best practices. We publish benchmarks that matter for production-grade agents."
 	buttons={[
-		{ text: "ENRICH YOUR DATA", icon: true }
+		{ text: "ACCESS BENCHMARKS", icon: true }
 	]}
 	alignRight={true}
->
-	<div class="w-full h-full bg-white border border-border rounded shadow-sm overflow-hidden font-mono text-[10px]">
-		<div class="grid grid-cols-4 gap-2 p-2 border-b border-border bg-gray-50 text-muted">
-			<div>ID</div>
-			<div>ENTITIES</div>
-			<div>PRODUCT RELEASES</div>
-			<div>SOC 2 STATUS</div>
-		</div>
-		{#each [1, 2, 3, 4, 5, 6] as i}
-			<div class="grid grid-cols-4 gap-2 p-2 border-b border-border/50 items-center">
-				<div class="text-muted">{i}</div>
-				<div class="flex items-center gap-2">
-					<div class="w-3 h-3 rounded-full bg-indigo-400/20"></div>
-					<span class="text-indigo-600">Entity {i}</span>
-				</div>
-				<div class="h-1.5 w-12 bg-gray-200 rounded animate-pulse"></div>
-				<div class="h-1.5 w-8 bg-gray-200 rounded animate-pulse"></div>
-			</div>
-		{/each}
-	</div>
-</FeatureBlock>
-
-<!-- Block 5: Monitor any event on the web -->
-<FeatureBlock 
-	title="Monitor any event on the web" 
-	description="Continuously monitor for any changes on the web"
-	buttons={[
-		{ text: "MONITOR THE WEB", icon: true }
-	]}
 >
 	<div class="w-full h-full bg-white border border-border rounded shadow-sm p-4 flex flex-col gap-4">
 		<div class="flex items-center justify-between border-b border-border pb-2">
-			<div class="text-[10px] font-mono text-muted flex items-center gap-2">
-				<span class="w-2 h-2 bg-green-500 rounded-full"></span>
-				New breakthroughs in AI research
+			<div class="text-[10px] font-mono text-muted flex items-center gap-2 uppercase tracking-tighter">
+				<span class="w-2 h-2 bg-accent rounded-full"></span>
+				Latest Benchmark: Multi-Agent Coordination Latency
 			</div>
 		</div>
 		
-		<!-- Calendar/Grid visual -->
-		<div class="grid grid-cols-12 gap-1">
-			{#each Array(48) as _, i}
-				<div class="aspect-square rounded-[1px] {i === 42 ? 'bg-accent' : (Math.random() > 0.8 ? 'bg-blue-200' : 'bg-gray-50')}"></div>
-			{/each}
-		</div>
-
-		<div class="mt-auto space-y-2">
-			<div class="flex items-center gap-2 text-[10px] text-muted font-mono">
-				<span class="w-3 h-3 border border-current rounded-full flex items-center justify-center text-[8px]">!</span>
-				No
+		<div class="space-y-4">
+			<div class="flex items-end gap-1 h-24">
+				{#each [40, 70, 45, 90, 65, 80, 55, 75, 95, 60] as height}
+					<div class="flex-1 bg-primary-100 hover:bg-accent transition-colors cursor-pointer" style="height: {height}%"></div>
+				{/each}
 			</div>
-			<div class="bg-gray-50 p-2 rounded border border-border flex gap-2 items-center">
-				<div class="w-4 h-4 bg-gray-200 rounded"></div>
-				<div class="h-1.5 w-24 bg-gray-200 rounded"></div>
+			<div class="flex justify-between text-[8px] font-mono text-muted uppercase">
+				<span>Framework A</span>
+				<span>Framework B</span>
+				<span>Agentical V1</span>
 			</div>
 		</div>
 	</div>

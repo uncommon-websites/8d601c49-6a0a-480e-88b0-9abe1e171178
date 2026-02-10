@@ -2,16 +2,16 @@
 	<div class="container-custom">
 		<div class="flex flex-col md:flex-row justify-between items-start mb-16 gap-8">
 			<div>
-				<h2 class="text-3xl font-medium mb-2">Highest accuracy at every price point</h2>
-				<p class="text-xl text-muted font-light">State of the art across several benchmarks</p>
+				<h2 class="text-3xl font-medium mb-2 tracking-tight uppercase">Validated Performance Benchmarks</h2>
+				<p class="text-xl text-muted font-light">Measuring coordination efficiency across agentic frameworks</p>
 			</div>
 			<div class="max-w-xs text-[10px] text-muted leading-relaxed border-l border-border pl-4">
-				<strong class="text-foreground block mb-1">About this benchmark</strong>
-				This benchmark consists of 2,500 questions developed by subject matter experts across dozens of subjects (e.g. math, humanities, natural sciences). Each question has a known solution that is unambiguous and easily verifiable, but requires sophisticated web retrieval and reasoning. Results are reported on a sample of 100 questions from this benchmark. Learn more in our <a href="#" class="underline">latest blog</a>.
+				<strong class="text-foreground block mb-1 uppercase tracking-widest">About this benchmark</strong>
+				This test measures the communication overhead and success rate of multi-agent systems performing complex economic tasks (e.g., cross-chain arbitrage, resource negotiation). Agentical Labs' validated primitives reduce redundant calls and optimize for settlement speed.
 			</div>
 		</div>
 
-		<div class="relative w-full h-[500px] border border-border bg-primary-50/30 p-8 font-mono text-xs">
+		<div class="relative w-full h-[500px] border border-border bg-primary-50/10 p-8 font-mono text-xs">
 			<!-- Chart Grid -->
 			<div class="absolute inset-0 p-8 grid grid-rows-6 grid-cols-1">
 				<div class="border-b border-dashed border-gray-200 w-full h-full"></div>
@@ -23,80 +23,79 @@
 			</div>
 			
 			<!-- Y Axis Label -->
-			<div class="absolute left-2 top-1/2 -translate-y-1/2 -rotate-90 text-muted origin-center whitespace-nowrap">
-				ACCURACY (%)
+			<div class="absolute left-2 top-1/2 -translate-y-1/2 -rotate-90 text-muted origin-center whitespace-nowrap uppercase tracking-widest">
+				Success Rate (%)
 			</div>
 
 			<!-- X Axis Label -->
-			<div class="absolute bottom-2 left-1/2 -translate-x-1/2 text-muted">
-				COST (CPM)
+			<div class="absolute bottom-2 left-1/2 -translate-x-1/2 text-muted uppercase tracking-widest">
+				Coordination Latency (ms)
 			</div>
 
 			<!-- Top Left Legend -->
-			<div class="absolute top-4 left-4 flex gap-4 text-[10px] text-muted">
-				<span class="bg-gray-200 px-1 rounded text-foreground">MMLU-Search</span>
-				<span>BrowseComp Search</span>
-				<span>BrowseComp</span>
-				<span>DeepResearch Bench</span>
-				<span>WISER-Atomic</span>
+			<div class="absolute top-4 left-4 flex gap-4 text-[10px] text-muted uppercase tracking-tighter">
+				<span class="bg-accent/10 text-accent px-1 rounded">Agentical V1</span>
+				<span>Standard RPC</span>
+				<span>P2P Mesh</span>
+				<span>Centralized Hub</span>
 			</div>
 
 			<!-- Data Points -->
 			
-			<!-- Parallel (The Winner) -->
-			<div class="absolute top-[15%] left-[15%] flex flex-col items-center group cursor-pointer z-10">
+			<!-- Agentical Labs (The Winner) -->
+			<div class="absolute top-[10%] left-[10%] flex flex-col items-center group cursor-pointer z-10">
 				<div class="flex items-center gap-2 mb-1">
-					<span class="text-accent font-bold">PARALLEL</span>
+					<span class="text-accent font-bold uppercase">Agentical Labs</span>
 				</div>
-				<div class="w-3 h-3 bg-accent rounded-full shadow-[0_0_0_4px_rgba(255,68,0,0.2)]"></div>
-				<div class="mt-1 text-[10px] text-accent">67% / $2CPM</div>
+				<div class="w-4 h-4 bg-accent rounded-full shadow-[0_0_0_6px_rgba(oklch(0.623_0.214_259.815)/0.2)]"></div>
+				<div class="mt-1 text-[10px] text-accent font-bold">98% / 120ms</div>
 			</div>
 
-			<!-- OpenAI GPT-4 -->
-			<div class="absolute top-[25%] left-[45%] flex flex-col items-center group cursor-pointer">
-				<div class="flex items-center gap-2 mb-1 opacity-0 group-hover:opacity-100 transition-opacity">
-					<span class="font-bold">OPENAI GPT-4</span>
-				</div>
-				<div class="w-2 h-2 bg-black rounded-full"></div>
-				<div class="mt-1 text-[10px] text-muted">65% / $15CPM</div>
-			</div>
-
-			<!-- Perplexity -->
-			<div class="absolute top-[55%] left-[35%] flex flex-col items-center group cursor-pointer">
+			<!-- CrewAI -->
+			<div class="absolute top-[35%] left-[45%] flex flex-col items-center group cursor-pointer">
 				<div class="flex items-center gap-2 mb-1 opacity-100">
-					<span class="font-bold text-[10px]">PERPLEXITY</span>
+					<span class="font-bold uppercase">CrewAI</span>
 				</div>
 				<div class="w-2 h-2 bg-black rounded-full"></div>
-				<div class="mt-1 text-[10px] text-muted">30% / $10CPM</div>
+				<div class="mt-1 text-[10px] text-muted">82% / 450ms</div>
 			</div>
 
-			<!-- ERA -->
-			<div class="absolute top-[65%] left-[40%] flex flex-col items-center group cursor-pointer">
+			<!-- LangChain -->
+			<div class="absolute top-[50%] left-[35%] flex flex-col items-center group cursor-pointer">
 				<div class="flex items-center gap-2 mb-1 opacity-100">
-					<span class="font-bold text-[10px]">ERA</span>
+					<span class="font-bold text-[10px] uppercase">LangChain</span>
 				</div>
 				<div class="w-2 h-2 bg-black rounded-full"></div>
-				<div class="mt-1 text-[10px] text-muted">24% / $15CPM</div>
+				<div class="mt-1 text-[10px] text-muted">75% / 380ms</div>
 			</div>
 
-			<!-- TAVILY -->
-			<div class="absolute top-[80%] right-[20%] flex flex-col items-center group cursor-pointer">
+			<!-- Fetch.ai -->
+			<div class="absolute top-[65%] left-[60%] flex flex-col items-center group cursor-pointer">
 				<div class="flex items-center gap-2 mb-1 opacity-100">
-					<span class="font-bold text-[10px]">TAVILY</span>
+					<span class="font-bold text-[10px] uppercase">Fetch.ai</span>
 				</div>
 				<div class="w-2 h-2 bg-black rounded-full"></div>
-				<div class="mt-1 text-[10px] text-muted">21% / $30CPM</div>
+				<div class="mt-1 text-[10px] text-muted">68% / 620ms</div>
+			</div>
+
+			<!-- AutoGPT -->
+			<div class="absolute top-[80%] right-[15%] flex flex-col items-center group cursor-pointer">
+				<div class="flex items-center gap-2 mb-1 opacity-100">
+					<span class="font-bold text-[10px] uppercase">AutoGPT</span>
+				</div>
+				<div class="w-2 h-2 bg-black rounded-full"></div>
+				<div class="mt-1 text-[10px] text-muted">45% / 1200ms</div>
 			</div>
 
 			<!-- Bottom Right Legend -->
-			<div class="absolute bottom-4 right-4 flex items-center gap-4 text-[10px]">
+			<div class="absolute bottom-4 right-4 flex items-center gap-4 text-[10px] uppercase font-mono">
 				<div class="flex items-center gap-1">
 					<div class="w-2 h-2 bg-accent rounded-full"></div>
-					<span class="text-accent font-bold">PARALLEL</span>
+					<span class="text-accent font-bold">Agentical Labs</span>
 				</div>
 				<div class="flex items-center gap-1">
 					<div class="w-2 h-2 bg-black rounded-full"></div>
-					<span class="text-muted">OTHERS</span>
+					<span class="text-muted">Industry Standard</span>
 				</div>
 			</div>
 		</div>
